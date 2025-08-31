@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- ========== META & TITLE ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RODOX. Entrümpelungsservice</title>
+
+  <!-- ========== ASSETS & FONTS ========== -->
+  <link rel="icon" href="assets/favicon-32x32.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- =======================================================
+       HEADER (Logo, Navigation, Info-Bar)
+  ======================================================== -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html">
+  <img class="logo" src="assets/Logo/Rodox-Logo.png" alt="Rodox-Logo" />
+</a>
+
+
+      <!-- Mobile Nav Toggle -->
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons" aria-label="Navigation umschalten">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <!-- Primary Navigation -->
+      <nav class="navbar" aria-label="Hauptnavigation">
+        <a href="index.html" style="--i:0;">Home</a>
+        <a href="#" style="--i:1;">Dienstleistungen</a>
+        <a href="kostenrechner.html" style="--i:2;">Kostenrechner</a>
+        <a href="#" style="--i:3;">Über Uns</a>
+        <a href="kontakt.html" style="--i:4;">Kontakt</a>
+        <a class="hero-phone-number" style="--i:5">🕿 +49 171 3229011</a>
+      </nav>
+    </div>
+
+    <!-- Info-Bar -->
+    <div class="info-bar" role="list" aria-label="Leistungsmerkmale">
+      <div class="info-item" role="listitem">✔ Kostenlose Besichtigung</div>
+      <div class="info-item" role="listitem">✔ Transparente Festpreise</div>
+      <div class="info-item" role="listitem">✔ Entsorgung inklusive</div>
+      <div class="info-item" role="listitem">✔ Besenreine Übergabe</div>
+    </div>
+  </header>
+
+  <!-- =======================================================
+       HERO SECTION
+  ======================================================== -->
+  <section class="hero" aria-label="Hero Bereich">
+    <img src="assets/Logo/startseite-wallpaper.jpg" alt="Hero Bild" class="hero-image" />
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>RODOX Entrümpelungsservice</h1>
+      <p>Ihr Partner für schnelle &amp; zuverlässige Entrümpelungen</p>
+      <a class="hero-btn">Kostenloses Angebot ➜</a>
+    </div>
+  </section>
+
+  <!-- Zwischenüberschrift / Claim -->
+  <div class="hero-bar">
+    <div class="hero-bar-item">Ihr Partner für klare Räume</div>
+  </div>
+
+  <!-- =======================================================
+       FEATURE CARDS
+  ======================================================== -->
+  <section class="cards" aria-label="Leistungsvorteile">
+    <div class="card">
+      <div class="card-icon">🚛</div>
+      <h3>Schneller Service</h3>
+      <p>Wir entrümpeln zuverlässig und pünktlich – egal ob Wohnung, Haus oder Keller.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">♻️</div>
+      <h3>Nachhaltig</h3>
+      <p>Wir achten auf fachgerechte Entsorgung und Recycling nach höchsten Standards.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">💶</div>
+      <h3>Faire Preise</h3>
+      <p>Klare und transparente Festpreise – ohne versteckte Kosten oder Überraschungen.</p>
+    </div>
+  </section>
+
+  <!-- =======================================================
+       SUCCESS STATS
+  ======================================================== -->
+  <section class="success-stats" aria-label="Erfolgszahlen">
+    <div class="stat-item"><strong>200+</strong><br />Entrümpelungen</div>
+    <div class="stat-item"><strong>4,9/5</strong><br />Kundenbewertungen</div>
+    <div class="stat-item"><strong>100%</strong><br />Kundenzufriedenheit</div>
+  </section>
+
+    <!-- =======================================================
+       GALERIE
+  ======================================================== -->
+
+    <!-- Zwischenüberschrift / Claim -->
+  <div class="hero-bar">
+    <div class="hero-bar-item">Ergebnisse, die überzeugen</div>
+  </div>
+
+  <!-- ====== Bilder-Slider ====== -->
+<div class="image-slider">
+  <div class="image-track">
+    <img src="assets/Bild1.jpg" alt="Bild 1">
+    <img src="assets/Bild2.jpg" alt="Bild 2">
+    <img src="assets/Bild3.png" alt="Bild 3">
+    <img src="assets/Bild4.webp" alt="Bild 4">
+    <!-- Damit der Loop seamless ist, Bilder nochmal -->
+    <img src="assets/Bild1.jpg" alt="Bild 1">
+    <img src="assets/Bild2.jpg" alt="Bild 2">
+    <img src="assets/Bild3.png" alt="Bild 3">
+    <img src="assets/Bild4.webp" alt="Bild 4">
+  </div>
+</div>
+
+  <!-- =======================================================
+       GOOGLE REVIEWS (Wrapper + Section)
+  ======================================================== -->
+  <div class="reviews-wrapper">
+    <!-- Bereichstitel -->
+    <div class="hero-bar">
+      <div class="hero-bar-item2">Das sagen unsere Kunden...</div>
+    </div>
+
+    <!-- Reviews -->
+    <section class="reviews" aria-label="Google Bewertungen">
+      <div class="reviews-header">
+        <img src="assets/google-logo.png" alt="Google Logo" class="google-logo" />
+        <div class="reviews-summary">
+          <h2>★★★★★ 5,0 Sterne</h2>
+          <p>Basierend auf 8 Bewertungen</p>
+        </div>
+      </div>
+
+      <div class="reviews-slider" role="region" aria-label="Bewertungen Slider">
+        <button class="slider-btn prev" aria-label="Vorherige Bewertungen">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+
+        <div class="slider-track">
+          <!-- Karte 1 -->
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="review-avatar">A</div>
+              <div>
+                <span class="review-name">Anna M.</span><br />
+                <span class="review-date">Juni 2025</span>
+              </div>
+            </div>
+            <p class="review-text">Sehr professionell, pünktlich und freundlich. Absolut zu empfehlen!</p>
+          </div>
+
+          <!-- Karte 2 -->
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="review-avatar">M</div>
+              <div>
+                <span class="review-name">Markus R.</span><br />
+                <span class="review-date">Mai 2025</span>
+              </div>
+            </div>
+            <p class="review-text">Schnell, sauber und preiswert. Vielen Dank für die tolle Arbeit!</p>
+          </div>
+
+          <!-- Karte 3 -->
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="review-avatar">L</div>
+              <div>
+                <span class="review-name">Laura K.</span><br />
+                <span class="review-date">April 2025</span>
+              </div>
+            </div>
+            <p class="review-text">Super Service! Jederzeit wieder.</p>
+          </div>
+
+          <!-- Karte 4 -->
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="review-avatar">M</div>
+              <div>
+                <span class="review-name">Mehmet T.</span><br />
+                <span class="review-date">März 2025</span>
+              </div>
+            </div>
+            <p class="review-text">Top Preis-Leistung. Sehr zuverlässig!</p>
+          </div>
+
+          <!-- Karte 5 -->
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="review-avatar">S</div>
+              <div>
+                <span class="review-name">Sarah L.</span><br />
+                <span class="review-date">Februar 2025</span>
+              </div>
+            </div>
+            <p class="review-text">Besenrein, schnell und freundlich. Absolute Empfehlung.</p>
+          </div>
+        </div>
+
+        <button class="slider-btn next" aria-label="Nächste Bewertungen">
+          <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Zwischenüberschrift / Kalkulator -->
+  <div class="hero-bar">
+    <div class="hero-bar-item">RODOX - Kostenkalkulator</div>
+  </div>
+
+  <!-- =======================================================
+       PRICE CALCULATOR
+  ======================================================== -->
+  <section class="card-calculator" aria-label="Kostenkalkulator">
+    <!-- Objektart -->
+    <div class="field">
+      <label class="top">Objektart</label>
+      <div class="hint">Welche Art von Objekt soll entrümpelt werden?</div>
+      <div class="control select">
+        <select>
+          <option>Haus</option>
+          <option>Wohnung</option>
+          <option>Keller</option>
+          <option>Dachboden</option>
+          <option>Garten</option>
+          <option>Gewerbe</option>
+          <option>Sonstiges</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Fläche -->
+    <div class="field">
+      <label class="top">Fläche in Quadratmetern</label>
+      <div class="hint">Wie groß ist die zu entrümpelnde Fläche (in qm)?</div>
+
+      <div class="slider-row">
+        <input id="areaRange" type="range" min="10" max="300" value="10" />
+        <span id="qmBadge" class="qm-badge">10&nbsp;qm</span>
+      </div>
+
+      <div class="range-scale">
+        <span>10&nbsp;qm</span>
+        <span>300&nbsp;qm</span>
+      </div>
+    </div>
+
+    <!-- Umfang des Hausrats -->
+    <div class="field">
+      <label class="top">Umfang des Hausrats</label>
+      <div class="hint">Wie umfangreich ist der zu entsorgende Hausrat?</div>
+      <div class="control select">
+        <select>
+          <option>Normal</option>
+          <option>Viel</option>
+          <option>Extrem</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Aufzug -->
+    <div class="field">
+      <label class="top">Aufzug vorhanden</label>
+      <div class="hint">Gibt es einen Aufzug im Gebäude?</div>
+      <div class="control select">
+        <select id="elevatorSelect">
+          <option value="Nein">Nein</option>
+          <option value="Ja">Ja</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Etage -->
+    <div class="field">
+      <label class="top">Etage</label>
+      <div class="hint">Auf welcher Etage befindet sich das Objekt?</div>
+      <div class="control">
+        <input type="number" inputmode="numeric" value="0" min="-5" max="60" />
+      </div>
+    </div>
+
+    <!-- Preisbox -->
+    <div class="price" tabindex="0" aria-label="Geschätzter Preis">
+      <div class="price-top">
+        <span id="priceAmount" class="amount">€450,00</span>
+        <span id="discountLabel" class="discount-label" style="display:none;">-7% Rabatt</span>
+      </div>
+      <div id="discountedPrice" class="discounted-amount" style="display:none;">€418,50</div>
+      <div class="sub">Geschätzter Preis</div>
+    </div>
+  </section>
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!-- Brand / Kurztext -->
+      <div class="footer-brand">
+        <img src="assets/Logo/Rodox-Logo.png" alt="RODOX Logo" class="footer-logo" />
+        <p>Entrümpelungen, Haushaltsauflösungen &amp; Entsorgung – schnell, fair &amp; besenrein.</p>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+          <a href="tel:+491713229011" aria-label="Anrufen"><i class="bx bx-phone"></i></a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li><a href="#">Über Uns</a></li>
+          <li><a href="#">Unser Service</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <!-- Kontakt -->
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><i class="bx bx-map"></i> Bad Breisig &amp; Umgebung</li>
+          <li><i class="bx bx-phone"></i> <a href="tel:+491713229011">+49 171 3229011</a></li>
+          <li><i class="bx bx-envelope"></i> <a href="mailto:kontakt@rodox.de">kontakt@rodox.de</a></li>
+          <li><i class="bx bx-time-five"></i> Mo–Sa: 08:00–18:00</li>
+        </ul>
+        <a class="footer-cta" href="#">Kostenloses Angebot ➜</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 RODOX Entrümpelungsservice</p>
+      <div class="footer-legal">
+        <a href="#">Impressum</a>
+        <span>•</span>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================
+       SCRIPTS
+  ======================================================== -->
+
+  <!-- Reviews Slider Logic -->
+  <script>
+    (function () {
+      const track = document.querySelector('.slider-track');
+      const prev = document.querySelector('.slider-btn.prev');
+      const next = document.querySelector('.slider-btn.next');
+
+      function cardStep() {
+        const card = track.querySelector('.review-card');
+        if (!card) return 300;
+        const gap = parseFloat(getComputedStyle(track).gap || 16);
+        return card.getBoundingClientRect().width + gap;
+      }
+
+      function atEnds() {
+        const max = track.scrollWidth - track.clientWidth - 1;
+        return {
+          atStart: track.scrollLeft <= 0,
+          atEnd: track.scrollLeft >= max
+        };
+      }
+
+      function updateArrows() {
+        const { atStart, atEnd } = atEnds();
+        prev.style.opacity = atStart ? .35 : 1;
+        prev.style.pointerEvents = atStart ? 'none' : 'auto';
+        next.style.opacity = atEnd ? .35 : 1;
+        next.style.pointerEvents = atEnd ? 'none' : 'auto';
+      }
+
+      prev.addEventListener('click', () => track.scrollBy({ left: -cardStep(), behavior: 'smooth' }));
+      next.addEventListener('click', () => track.scrollBy({ left: cardStep(), behavior: 'smooth' }));
+      track.addEventListener('scroll', updateArrows, { passive: true });
+      window.addEventListener('resize', updateArrows);
+
+      updateArrows();
+    })();
+  </script>
+
+  <!-- Price Calculator Logic -->
+  <script>
+    (function () {
+      const range = document.getElementById('areaRange');
+      const badge = document.getElementById('qmBadge');
+      const priceEl = document.getElementById('priceAmount');
+      const discountEl = document.getElementById('discountedPrice');
+      const discountLabel = document.getElementById('discountLabel');
+      const elevatorSelect = document.getElementById('elevatorSelect');
+
+      const fmt = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' });
+
+      function updateUI() {
+        const min = Number(range.min);
+        const max = Number(range.max);
+        const qm = Number(range.value);
+        const hasElevator = elevatorSelect.value === "Ja";
+
+        // Badge
+        badge.textContent = `${qm}\u00A0qm`;
+
+        // Slider-Track (neutraler Hintergrund)
+        const pct = ((qm - min) / (max - min)) * 100;
+        range.style.background = `#eeeeee`;
+
+        // Basispreis
+        let price = 450;
+        if (qm > 10) {
+          price += (qm - 10) * 22;
+        }
+
+        if (hasElevator) {
+          // Durchgestrichen + Label anzeigen
+          priceEl.textContent = fmt.format(price);
+          priceEl.classList.add("strike");
+          discountLabel.style.display = "inline-block";
+
+          const discounted = price * 0.93; // 7% Rabatt
+          discountEl.textContent = fmt.format(discounted);
+          discountEl.style.display = "block";
+        } else {
+          // Normaler Preis
+          priceEl.textContent = fmt.format(price);
+          priceEl.classList.remove("strike");
+          discountLabel.style.display = "none";
+          discountEl.style.display = "none";
+        }
+      }
+
+      range.addEventListener('input', updateUI);
+      elevatorSelect.addEventListener('change', updateUI);
+
+      updateUI();
+    })();
+  </script>
+</body>
+</html>
